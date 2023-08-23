@@ -17,17 +17,10 @@ import styles from "../styles/contacts.module.css";
 import Navbar from "@/components/body/navbar";
 import Footer from "@/components/body/footer";
 import { HeadElement } from "@/components/body/head";
-import { metasitedata } from "@/lib/utils";
-import { Metadata } from "next/types";
 import datasource from "@/datalayer";
 import { ContactFormSchema, ContactFormResolver } from "@/lib/form-schema";
 import { Button } from "@/components/ui/button";
 import { Icons } from "@/components/body/icons";
-
-export const metadata: Metadata = {
-  title: metasitedata.title + "Contacts",
-  description: metasitedata.description,
-};
 
 const contactFS = ContactFormSchema();
 export default function Contacts({ url }) {
@@ -251,7 +244,7 @@ export default function Contacts({ url }) {
   );
 }
 
-export const getStaticProps = async () => {
+Contacts.getInitialProps = async () => {
     const url = process.env.BACKEND_API_URL;
   
     return {

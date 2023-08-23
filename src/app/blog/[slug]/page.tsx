@@ -53,7 +53,7 @@ export default function BlogSlugPage({ doc, source}) {
     };
   };
   
-  export const getStaticProps = async (context) => {
+  BlogSlugPage.getInitialProps = async (context) => {
     const slug = context.params.slug;
   
     const doc = await datasource.getBlogsBySlug({ slug });

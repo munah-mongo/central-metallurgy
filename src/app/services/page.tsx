@@ -6,12 +6,6 @@ import styles from "../styles/digi.module.css";
 import { HeadElement } from "@/components/body/head";
 import { metasitedata } from "@/lib/utils";
 import Link from "next/link";
-import { Metadata } from "next/types";
-
-export const metadata: Metadata = {
-  title: metasitedata.title + "Services",
-  description: metasitedata.description,
-};
 
 export default function SiteServices() {
   return (
