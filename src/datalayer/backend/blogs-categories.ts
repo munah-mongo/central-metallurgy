@@ -60,3 +60,5 @@ export const getBlogsCategories = async () => {
     const rawCategory = res.data.data[0];
     return blogsCategoryReducer(rawCategory);
   };
+
+  //new
