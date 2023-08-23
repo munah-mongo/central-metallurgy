@@ -128,7 +128,7 @@ export default function Homer() {
             {metasitedata.title}. From precise material testing and
             comprehensive analysis to expert consultation, we drive industries
             towards peak performance. With state-of-the-art facilities and a
-            skilled team, we're your material potential's key partner.
+            skilled team, we&apos;re your material potential&apos;s key partner.
           </p>
         </div>
       </div>
@@ -172,7 +172,7 @@ export default function Homer() {
             <h3 className="text-lg font-semibold">
               At {metasitedata.title}, our approach to metallurgical analysis
               and testing is centered around precision, collaboration, and
-              delivering actionable results. Here's a glimpse into how we work:
+              delivering actionable results. Here&apos;s a glimpse into how we work:
             </h3>
             <p>
               <strong>Understanding Your Needs:</strong> We begin by closely
