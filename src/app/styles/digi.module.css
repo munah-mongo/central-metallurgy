@@ -1,0 +1,477 @@
+    .service {
+        display: flex;
+        height: 50vh;
+        background: linear-gradient(rgba(4, 9, 30, 0.702), rgba(4, 9, 30, 0.7)), url("/assets/bg.jpg");
+        background-position: center;
+        background-size: cover;
+        color: #fff;
+    }
+    
+    .service .contents h1 {
+        font-size: 36px;
+        font-weight: 600;
+        color: #fff;
+        margin-left: 210px;
+        margin-top: 80px;
+    }
+    
+    .newSec3 {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f1f1f1;
+    }
+    
+    .features1 {
+        background: url("/assets/Branding.jpg") no-repeat center / cover;
+        width: 50%;
+        height: 900px;
+        background-color: #f1f1f1;
+    }
+    
+    .innerSection1 {
+        width: 50%;
+        float: right;
+        background-color: rgb(14, 13, 13);
+        padding: 90px;
+        margin-left: -150px;
+        box-shadow: 12px 10px 10px rgb(0, 0, 0, .3);
+    }
+    
+    .innerSection1 h6 {
+        color: rgb(100, 100, 100);
+        font-size: 22px;
+    }
+    
+    .innerSection1 .text {
+        font-size: 30px;
+        margin-top: 5px;
+        font-weight: 500;
+        color: #fff;
+    }
+    
+    .innerSection1 p {
+        color: #fff;
+        margin-top: 5px;
+        font-size: 15px;
+        text-align: justify;
+    }
+    
+    .innerSection1 h4 {
+        font-size: 20px;
+        margin-top: 10px;
+        color: rgb(100, 100, 100);
+    }
+    
+    .faq1 .text1 {
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        color: #35ED35;
+        margin-left: 10px;
+    }
+    
+    .faq1 .text1 span {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.829);
+        margin-left: 15px;
+    }
+    
+    .innerSection1 a {
+        display: inline-block;
+        background: #35ED35;
+        color: #fff;
+        padding: 12px 36px;
+        font-size: 17px;
+        margin-top: 20px;
+        border-radius: 4px;
+        text-decoration: none;
+        background: linear-gradient(to left, #35ED35 50%, #012C01 50%) right;
+        background-size: 200%;
+        transition: .4s ease-out;
+    }
+    
+    .innerSection1 a:hover {
+        background-position: left;
+        text-decoration: none;
+    }
+    /* services section Videography */
+    
+    .newSec4 {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        padding: 50px 0;
+        justify-content: center;
+        background-color: #f1f1f1;
+    }
+    
+    .features4 {
+        background: url("/assets/Videography.jpg") no-repeat center / cover;
+        width: 50%;
+        height: 900px;
+        float: right;
+    }
+    
+    .innerSection4 {
+        width: 50%;
+        background-color: rgb(14, 13, 13);
+        padding: 90px;
+        z-index: 0;
+        margin-right: -150px;
+        box-shadow: 12px 10px 10px rgb(0, 0, 0, .3);
+    }
+    
+    .innerSection4 h6 {
+        color: rgb(100, 100, 100);
+        font-size: 22px;
+    }
+    
+    .innerSection4 .text4 {
+        font-size: 30px;
+        font-weight: 500;
+        margin-top: 5px;
+        color: #fff;
+    }
+    
+    .innerSection4 p {
+        color: #fff;
+        font-size: 15px;
+        margin-top: 5px;
+        text-align: justify;
+    }
+    
+    .innerSection4 a {
+        display: inline-block;
+        background: #35ED35;
+        color: #fff;
+        padding: 12px 36px;
+        font-size: 17px;
+        margin-top: 20px;
+        border-radius: 4px;
+        text-decoration: none;
+        background: linear-gradient(to left, #35ED35 50%, #012C01 50%) right;
+        background-size: 200%;
+        transition: .4s ease-out;
+    }
+    
+    .innerSection4 a:hover {
+        background-position: left;
+        text-decoration: none;
+    }
+    /* services section 3 */
+    
+    .newSec5 {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f1f1f1;
+    }
+    
+    .features5 {
+        background: url("/assets/Photography.jpg") no-repeat center / cover;
+        width: 50%;
+        height: 900px;
+        background-color: #f1f1f1;
+    }
+
+    .features7 {
+        background: url("/assets/ConsaltationNext.jpg") no-repeat center / cover;
+        width: 50%;
+        height: 900px;
+        background-color: #f1f1f1;
+    }
+    
+    .innerSection5 {
+        width: 50%;
+        float: right;
+        background-color: rgb(14, 13, 13);
+        padding: 90px;
+        margin-left: -150px;
+        box-shadow: 12px 10px 10px rgb(0, 0, 0, .3);
+    }
+    
+    .innerSection5 h6 {
+        color: rgb(100, 100, 100);
+        font-size: 22px;
+        /* margin-top: 40px; */
+    }
+    
+    .innerSection5 .text {
+        font-size: 30px;
+        margin-top: 5px;
+        font-weight: 500;
+        color: #fff;
+        /* margin-top: 15px; */
+    }
+    
+    .innerSection5 p {
+        margin-top: 5px;
+        font-size: 15px;
+        color: #fff;
+        text-align: justify;
+    }
+    
+    .innerSection5 h4 {
+        font-size: 20px;
+        margin-top: 10px;
+        color: rgb(100, 100, 100);
+    }
+    
+    .faq5 .text5 {
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        color: #35ED35;
+        margin-left: 10px;
+    }
+    
+    .faq5 .text5 span {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.829);
+        margin-left: 15px;
+    }
+    
+    .innerSection5 a {
+        display: inline-block;
+        background: #35ED35;
+        color: #fff;
+        padding: 12px 36px;
+        font-size: 17px;
+        margin-top: 20px;
+        border-radius: 4px;
+        text-decoration: none;
+        background: linear-gradient(to left, #35ED35 50%, #012C01 50%) right;
+        background-size: 200%;
+        transition: .4s ease-out;
+    }
+    
+    .innerSection5 a:hover {
+        background-position: left;
+        text-decoration: none;
+    }
+    /* services section 3 */
+    
+    .newSec6 {
+        min-height: 100vh;
+        display: flex;
+        margin-top: 0;
+        align-items: center;
+        padding: 50px 0;
+        justify-content: center;
+        background-color: #f1f1f1;
+    }
+    
+    .features6 {
+        background: url("/assets/pH.jpg") no-repeat center / cover;
+        width: 50%;
+        height: 1000px;
+    }
+    
+    .innerSection6 {
+        width: 50%;
+        background-color: rgb(14, 13, 13);
+        padding: 90px;
+        z-index: 0;
+        margin-right: -150px;
+        box-shadow: 12px 10px 10px rgb(0, 0, 0, .3);
+    }
+    
+    .innerSection6 h6 {
+        color: rgb(100, 100, 100);
+        font-size: 22px;
+    }
+    
+    .innerSection6 .text {
+        font-size: 30px;
+        font-weight: 500;
+        margin-top: 5px;
+        color: #fff;
+    }
+    
+    .innerSection6 p {
+        color: #fff;
+        font-size: 15px;
+        margin-top: 5px;
+        text-align: justify;
+    }
+    
+    .innerSection6 h4 {
+        font-size: 20px;
+        margin-top: 10px;
+        color: rgb(100, 100, 100);
+    }
+    
+    .faq6 .text6 {
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        color: #35ED35;
+        margin-left: 10px;
+    }
+    
+    .faq6 .text6 span {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.829);
+        margin-left: 15px;
+    }
+    
+    .innerSection6 a {
+        display: inline-block;
+        background: #35ED35;
+        color: #fff;
+        padding: 12px 36px;
+        font-size: 18px;
+        margin-top: 20px;
+        border-radius: 4px;
+        text-decoration: none;
+        background: linear-gradient(to left, #35ED35 50%, #012C01 50%) right;
+        background-size: 200%;
+        transition: .4s ease-out;
+    }
+    
+    .innerSection6 a:hover {
+        background-position: left;
+        text-decoration: none;
+    }
+    
+    @media (max-width: 768px) {
+        .service {
+            height: 50vh;
+            background: linear-gradient(rgba(4, 9, 30, 0.702), rgba(4, 9, 30, 0.7)), url("/assets/bg.jpg");
+            background-position: center;
+            background-size: cover;
+            color: #fff;
+        }
+        .service .contents h1 {
+            font-size: 30px;
+            margin-left: 100px;
+            margin-top: 150px;
+        }
+        .newSec3 {
+            flex-direction: column;
+        }
+        .features1 {
+            width: 100%;
+        }
+        .innerSection1 {
+            width: 90%;
+            padding: 50px;
+            margin: 0;
+            margin-top: -300px;
+        }
+        .innerSection1 h6 {
+            font-size: 18px;
+        }
+        .innerSection1 .text {
+            font-size: 22px;
+        }
+        .innerSection1 p {
+            color: #fff;
+            margin-top: 5px;
+            text-align: justify;
+        }
+        .innerSection1 h4 {
+            font-size: 17px;
+            ;
+        }
+        .faq1 .text1 {
+            font-size: 18px;
+        }
+        .faq1 .text1 span {
+            font-size: 14px;
+        }
+        .innerSection1 a {
+            font-size: 15px;
+        }
+        /* services section Videography */
+        .newSec4 {
+            flex-direction: column;
+        }
+        .features4 {
+            width: 100%;
+        }
+        .innerSection4 {
+            width: 90%;
+            padding: 50px;
+            margin: 0;
+            margin-bottom: -300px;
+        }
+        .innerSection4 h6 {
+            font-size: 18px;
+        }
+        .innerSection4 .text4 {
+            font-size: 22px;
+        }
+        .innerSection4 a {
+            font-size: 15px;
+        }
+        /* services section 3 */
+        .newSec5 {
+            flex-direction: column;
+        }
+        .features5 {
+            width: 100%;
+        }
+        .innerSection5 {
+            width: 90%;
+            padding: 50px;
+            margin: 0;
+            margin-top: -300px;
+        }
+        .innerSection5 h6 {
+            font-size: 18px;
+        }
+        .innerSection5 .text {
+            font-size: 22px;
+        }
+        .innerSection5 h4 {
+            font-size: 18px;
+        }
+        .faq5 .text5 {
+            font-size: 17px;
+            display: flex;
+            flex-direction: column;
+            color: #35ED35;
+            margin-left: 10px;
+        }
+        .faq5 .text5 span {
+            font-size: 15px;
+        }
+        .innerSection5 a {
+            font-size: 15px;
+        }
+        /* services section 3 */
+        .newSec6 {
+            flex-direction: column;
+        }
+        .features6 {
+            width: 100%;
+        }
+        .innerSection6 {
+            width: 90%;
+            padding: 50px;
+            margin: 0;
+            margin-bottom: -300px;
+        }
+        .innerSection6 h6 {
+            font-size: 20px;
+        }
+        .innerSection6 .text {
+            font-size: 25px;
+        }
+        .innerSection6 h4 {
+            font-size: 18px;
+        }
+        .faq6 .text6 {
+            font-size: 18px;
+        }
+        .faq6 .text6 span {
+            font-size: 15px;
+        }
+        .innerSection6 a {
+            font-size: 15px;
+        }
+    }

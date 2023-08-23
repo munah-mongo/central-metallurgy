@@ -1,0 +1,167 @@
+.about_us {
+    display: flex;
+    height: 50vh;
+    background: linear-gradient(rgba(4, 9, 30, 0.702), rgba(4, 9, 30, 0.7)), url("/assets/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+.about_us .contents h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+    margin-left: 210px;
+    margin-top: 80px;
+}
+
+.about .content {
+    padding: 50px 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left {
+    width: 55%;
+}
+
+.right {
+    width: 45%;
+}
+
+.about .content .right .text {
+    font-size: 22px;
+    font-weight: 550;
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+
+.about .content .right .text span {
+    color: #35ED35;
+}
+
+.about .content .right p {
+    text-align: justify;
+    font-size: 15px;
+    padding: 0 20px;
+}
+
+.cta {
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/assets/laptopH.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 1px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta h5 {
+    color: #fff;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    padding: 0;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cta h6 {
+    color: rgba(255, 255, 255, 0.808);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+@media(max-width:768px) {
+    .about-us .contents h1,
+    .service .contents h1 {
+        font-size: 34px;
+        font-weight: 600;
+        color: #fff;
+        margin-left: 150px;
+        margin-top: 90px;
+    }
+    .about_about-us .about_about-us-content .right {
+        width: 100%;
+    }
+    .about_about-us .about_about-us-content .right img {
+        height: 360px;
+        width: 100%;
+    }
+    .about_about-us .about_about-us-content .left {
+        width: 100%;
+    }
+    .about_about-us .about_about-us-content .left .text {
+        margin-top: 30px;
+    }
+    .cta {
+        width: 80%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/assets/laptopH.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 1px;
+        text-align: center;
+        padding: 100px 0;
+    }
+    .cta h5 {
+        color: #fff;
+        margin-bottom: 40px;
+        margin-top: 40px;
+        padding: 0;
+        font-size: 17px;
+    }
+    .cta h6 {
+        color: rgba(255, 255, 255, 0.808);
+        font-size: 14px;
+        text-decoration: underline;
+    }
+}
+
+@media(max-width:480px) {
+    .about_us .contents h1,
+    .service .contents h1 {
+        font-size: 26px;
+        margin-left: 80px;
+        margin-top: 180px;
+    }
+    .about .content {
+        padding: 20px 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about .content .right {
+        width: 100%;
+    }
+    .about .content .right img {
+        height: 360px;
+        width: 100%;
+    }
+    .about .content .left {
+        width: 100%;
+    }
+    .about .content .left .text {
+        margin-top: 30px;
+    }
+    .cta {
+        width: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/assets/laptopH.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 1px;
+        text-align: center;
+        padding: 50px 0;
+    }
+    .cta h5 {
+        color: #fff;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        padding: 0;
+        font-size: 15px;
+    }
+    .cta h6 {
+        color: rgba(255, 255, 255, 0.808);
+        font-size: 13px;
+        text-decoration: underline;
+    }
+}

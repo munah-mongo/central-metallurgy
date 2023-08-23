@@ -1,0 +1,726 @@
+.containerInfo {
+    width: 100%;
+    height: 100vh;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.content h1 {
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.content h1:hover {
+    -webkit-text-stroke: 1px #fff;
+    -moz-text-stroke: 1px #fff;
+    -ms-text-stroke: 1px #fff;
+    color: transparent;
+    transition: .4s ease-out;
+}
+
+.content h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.centerText{
+    text-align: center;
+}
+
+.content p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.containerInfo2 {
+    background-color: rgb(8, 8, 8);
+}
+
+.grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.card {
+    cursor: pointer;
+    margin: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    transition: color 0.15s ease, border-color 0.15s ease;
+    max-width: 450px;
+}
+
+.cardits {
+    cursor: pointer;
+    margin: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    background-color: #35ED35;
+    border: 1px solid #35ED35;
+    border-radius: 10px;
+    transition: color 0.15s ease, border-color 0.15s ease;
+    max-width: 450px;
+}
+
+.card h2 {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+}
+
+.cardits h2 {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+}
+
+.card p {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+.cardits p {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.anime {
+    display: inline-flex;
+}
+
+.animer {
+    display: inline-flex;
+}
+
+.dynamictxt {
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+
+.dynamictxt li {
+    list-style: none;
+    font-weight: 500;
+    top: 0;
+    position: relative;
+    animation: slide 12s steps(5) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -150px;
+    }
+}
+
+.dynamictxt li span {
+    position: relative;
+}
+
+.dynamictxt li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 150%;
+    width: 100%;
+    background-color: rgb(8, 8, 8);
+    border-left: 2px solid #fff;
+    animation: typing 3.5s steps(18) infinite;
+}
+
+.animer .dynamictxt li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 150%;
+    width: 100%;
+    background-color: #35ED35;
+    border-left: 2px solid #fff;
+    animation: typing 3.5s steps(18) infinite;
+}
+
+@keyframes typing {
+    100% {
+        left: 110%;
+    }
+}
+
+.text {
+    color: #fff;
+    padding: 0 100px;
+}
+
+.text p {
+    margin-top: 10px;
+    padding: 0 100px;
+    text-align: center;
+}
+
+.txt1 {
+    font-size: 20px;
+}
+
+.text1 {
+    color: #fff;
+    padding: 0 100px;
+    padding-bottom: 50px;
+}
+
+.text1 p {
+    margin-top: 10px;
+    padding: 0 150px;
+    text-align: center;
+}
+
+
+/* FEATURES SECTION */
+
+.newSec1 {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+
+.features {
+    background: url("/assets/pH.jpg") no-repeat center / cover;
+    width: 50%;
+    height: 900px;
+}
+
+.innerSection {
+    width: 50%;
+    float: right;
+    margin-left: -150px;
+    background-color: rgb(14, 13, 13);
+    padding: 140px;
+    box-shadow: 12px 10px 10px rgb(0, 0, 0, .3);
+}
+
+.innerSection .titled {
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+    color: #fff;
+}
+
+.title {
+    color: #012C01;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+/* FEATURES SECTION 3 */
+
+.newSec2 {
+    padding: 50px 50px;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(14, 13, 13);
+}
+
+.newSec2 .heading {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+
+.newSec2 .heading:before {
+    position: absolute;
+    content: '';
+    width: 12%;
+    height: 7px;
+    bottom: 17%;
+    background: #35ED35e8;
+    border-radius: 4px;
+}
+
+.newSec2 .teamContent {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.newSec2 .teamContent .right {
+    width: 60%;
+    padding-left: 50px;
+}
+
+.newSec2 .teamContent .left {
+    width: 40%;
+}
+
+.newSec2 .teamContent .left .text span {
+    color: #35ED35;
+}
+
+.newSec2 .teamContent .left p {
+    text-align: justify;
+    margin-top: 30px;
+    font-size: 15px;
+    padding: 0 20px;
+    /* color: rgba(255, 255, 255, 0.815); */
+    color: #fff;
+}
+
+.img_wrapper {
+    padding: 100px 0;
+}
+
+.newSec2 .heading1 {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+
+.newSec2 .heading1:before {
+    position: absolute;
+    content: '';
+    width: 12%;
+    height: 7px;
+    bottom: 17%;
+    background: #35ED35e8;
+    border-radius: 4px;
+}
+
+.newSec2 .teamContent1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.newSec2 .teamContent1 .left {
+    width: 60%;
+}
+
+.newSec2 .teamContent1 .right {
+    width: 40%;
+}
+
+.newSec2 .teamContent1 .right p {
+    text-align: justify;
+    margin-top: 30px;
+    font-size: 15px;
+    color: #fff;
+}
+
+@media (max-width: 947px) {
+    .innerSection .title {
+        font-size: 25px;
+    }
+    .innerSection .faq {
+        margin-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    .features {
+        width: 50%;
+        height: 650px;
+    }
+    .innerSection {
+        width: 50%;
+        margin-left: -110px;
+        padding: 60px;
+    }
+    .newSec2 .team-content .left .text {
+        font-size: 20px;
+    }
+    .newSec2 .team-content .left p {
+        font-size: 15px;
+    }
+    .newSec2 .team-content .right img {
+        height: 220px;
+        width: 420px;
+    }
+    .newSec2 .team-content1 .right .text {
+        font-size: 20px;
+    }
+    .newSec2 .team-content1 .right p {
+        font-size: 15px;
+    }
+    .newSec2 .team-content1 .left img {
+        height: 250px;
+        width: 420px;
+    }
+    .innerSection1 {
+        padding: 30px;
+    }
+    .innerSection4 {
+        padding: 30px;
+    }
+    .innerSection5 {
+        padding: 30px;
+    }
+    .innerSection6 {
+        padding: 10px;
+    }
+    .innerSection7 {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 40px;
+    }
+    .content h2 {
+        font-size: 20px;
+    }
+    .content p {
+        font-size: 18px;
+    }
+    .card h2 {
+        margin: 0 0 1rem 0;
+        font-size: 1.4rem;
+    }
+    .cardits h2 {
+        margin: 0 0 1rem 0;
+        font-size: 1.4rem;
+    }
+    .text {
+        color: #fff;
+        padding: 0 50px;
+    }
+    .text p {
+        margin-top: 10px;
+        padding: 0 50px;
+        text-align: center;
+    }
+    .txt1 {
+        font-size: 18px;
+    }
+    .text1 {
+        color: #fff;
+        padding: 0 50px;
+        padding-bottom: 50px;
+    }
+    .text1 p {
+        margin-top: 10px;
+        padding: 0 100px;
+        text-align: center;
+    }
+    .innerSection .title {
+        font-size: 22px;
+    }
+    .innerSection .faq {
+        margin-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    .innerSection {
+        width: 65%;
+        padding: 85px;
+    }
+    .innerSection .faq .question h3 {
+        font-size: 16px;
+    }
+    .newSec2 {
+        padding: 50px 20px;
+    }
+    .newSec2 .teamContent .left {
+        width: 100%;
+        align-items: center;
+        text-align: justify;
+    }
+    .newSec2 .teamContent .left .text {
+        font-size: 17px;
+    }
+    .newSec2 .teamContent .left p {
+        font-size: 15px;
+        padding-left: 0;
+    }
+    .newSec2 .teamContent .right {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 15px;
+    }
+    .img_wrapper {
+        width: 700px;
+        height: 250px;
+    }
+    .newSec2 .teamContent1 .right {
+        width: 100%;
+    }
+    .newSec2 .teamContent1 .right .text {
+        font-size: 17px;
+        margin-top: 25px;
+    }
+    .newSec2 .teamContent1 .right p {
+        font-size: 15px;
+    }
+    .newSec2 .teamContent1 .left {
+        width: 100%;
+    }
+    .contact2 .contact2-content {
+        padding: 0 80px;
+    }
+    .contact2 .contact2-content h2 {
+        font-size: 25px;
+        /* text-align: justify; */
+    }
+    .contact2 .contact2-content .text-2 {
+        font-size: 27px;
+        margin-left: 90px;
+    }
+    .contact2 .contact2-content a {
+        margin-left: 150px;
+    }
+    /*SERVICES PAGE*/
+    .innerSection1 {
+        padding: 30px;
+        width: 65%;
+    }
+    .innerSection1 .text {
+        font-size: 25px;
+    }
+    .innerSection4 {
+        padding: 30px;
+        width: 65%;
+    }
+    .innerSection4 .text4 {
+        font-size: 25px;
+    }
+    .innerSection5 {
+        padding: 30px;
+        width: 65%;
+    }
+    .innerSection5 .text {
+        font-size: 25px;
+    }
+    .innerSection6 {
+        padding: 10px;
+        width: 65%;
+    }
+    .innerSection6 .text {
+        font-size: 25px;
+    }
+    .innerSection7 {
+        padding: 20px;
+        width: 65%;
+    }
+    .innerSection7 .text {
+        font-size: 25px;
+    }
+    .contactInfo {
+        margin-left: 400px;
+    }
+    .home .home-content .text-1 {
+        font-size: 55px;
+    }
+    .home .home-content .text-2 {
+        font-size: 12px;
+    }
+    .home .home-content a {
+        padding: 10px 30px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content h1 {
+        font-size: 22px;
+        padding: 0 10px;
+    }
+    .content h2 {
+        font-size: 17px;
+    }
+    .content p {
+        font-size: 13px;
+        padding: 0 10px;
+    }
+    .card h2 {
+        margin: 0 0 1rem 0;
+        font-size: 1.1rem;
+    }
+    .cardits h2 {
+        margin: 0 0 1rem 0;
+        font-size: 1.1rem;
+    }
+    .text {
+        color: #fff;
+        padding: 0 15px;
+        font-size: 15px;
+    }
+    .text p {
+        margin-top: 10px;
+        padding: 0 25px;
+        text-align: center;
+    }
+    .txt1 {
+        font-size: 15px;
+    }
+    .text1 {
+        color: #fff;
+        padding: 0 15px;
+        padding-bottom: 50px;
+    }
+    .text1 p {
+        margin-top: 10px;
+        padding: 0 15px;
+        text-align: center;
+    }
+    .newSec1 {
+        flex-direction: column;
+    }
+    .features {
+        width: 100%;
+    }
+    .innerSection .title {
+        font-size: 18px;
+    }
+    .innerSection .faq {
+        margin-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    .innerSection {
+        width: 90%;
+        padding: 20px;
+        margin: 0;
+        margin-top: -100px;
+    }
+    .innerSection .faq .question h3 {
+        font-size: 16px;
+    }
+    .newSec2 .teamContent .left {
+        width: 100%;
+        align-items: center;
+        text-align: justify;
+    }
+    .newSec2 .teamContent .left .text {
+        font-size: 17px;
+    }
+    .newSec2 .teamContent .left p {
+        font-size: 15px;
+    }
+    .newSec2 .teamContent .right {
+        width: 100%;
+        margin-top: 15px;
+    }
+    .img_wrapper {
+        display: none;
+    }
+    .img_wrapper .newSec2 .teamContent1 .right {
+        width: 100%;
+    }
+    .newSec2 .teamContent1 .right .text {
+        font-size: 18px;
+        margin-top: 25px;
+    }
+    .newSec2 .teamContent1 .right p {
+        font-size: 15px;
+    }
+    .newSec2 .teamContent1 .left {
+        width: 100%;
+    }
+    .contact2 .contact2-content {
+        padding: 0 80px;
+    }
+    .contact2 .contact2-content h2 {
+        font-size: 25px;
+        /* text-align: justify; */
+    }
+    .contact2 .contact2-content .text-2 {
+        font-size: 27px;
+        margin-left: 90px;
+    }
+    .contact2 .contact2-content a {
+        margin-left: 150px;
+    }
+    /*SERVICES PAGE*/
+    .innerSection1 {
+        padding: 30px;
+        width: 65%;
+    }
+    .innerSection1 .text {
+        font-size: 25px;
+    }
+    .innerSection4 {
+        padding: 30px;
+        width: 65%;
+    }
+    .innerSection4 .text4 {
+        font-size: 25px;
+    }
+    .innerSection5 {
+        padding: 30px;
+        width: 65%;
+    }
+    .innerSection5 .text {
+        font-size: 25px;
+    }
+    .innerSection6 {
+        padding: 10px;
+        width: 65%;
+    }
+    .innerSection6 .text {
+        font-size: 25px;
+    }
+    .innerSection7 {
+        padding: 20px;
+        width: 65%;
+    }
+    .innerSection7 .text {
+        font-size: 25px;
+    }
+    .contactInfo {
+        margin-left: 400px;
+    }
+    .home .home-content .text-1 {
+        font-size: 55px;
+    }
+    .home .home-content .text-2 {
+        font-size: 12px;
+    }
+    .home .home-content a {
+        padding: 10px 30px;
+        font-size: 16px;
+    }
+}
