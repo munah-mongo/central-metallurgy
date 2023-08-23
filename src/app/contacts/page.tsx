@@ -1,46 +1,11 @@
 "use client";
-import { z } from "zod";
-import {
-  Form,
-  FormControl,
-  FormDescription,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import Image from "next/image";
-import { useState } from "react";
 import styles from "../styles/contacts.module.css";
 import Navbar from "@/components/body/navbar";
 import Footer from "@/components/body/footer";
 import { HeadElement } from "@/components/body/head";
-import datasource from "@/datalayer";
-import { ContactFormSchema, ContactFormResolver } from "@/lib/form-schema";
-import { Button } from "@/components/ui/button";
-import { Icons } from "@/components/body/icons";
+import ContactForm from "@/components/global/contact-form";
 
-const contactFS = ContactFormSchema();
 export default function Contacts({ url }) {
-  const [isLoading, setIsLoading] = useState<boolean>(false);
-  const form = ContactFormResolver();
-
-  //submitting form data
-  async function onSubmit(data: z.infer<typeof contactFS>) {
-    let values = form.getValues();
-    setIsLoading(true);
-    const responce = await datasource.postContactForm({ data, url });
-    if (responce) {
-      form.reset(values);
-      setIsLoading(false);
-      return;
-    }
-    setIsLoading(false);
-    return;
-  }
-
   return (
     <>
       <HeadElement url="" image="" title="Contacts" description="" />
@@ -96,146 +61,7 @@ export default function Contacts({ url }) {
             </div>
           </div>
           <div className={styles.contactForm}>
-            <Form {...form}>
-              <form
-                onSubmit={form.handleSubmit(onSubmit)}
-                className="w-2/3 space-y-6 text-foreground"
-              >
-                <h2>Message Us</h2>
-                <div className={styles.inputBox}>
-                  <FormField
-                    control={form.control}
-                    name="fullname"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel className="text-sm font-semibold">
-                          Full Name
-                        </FormLabel>
-                        <FormControl>
-                          <Input
-                            type="text"
-                            placeholder="Enter full name"
-                            className="text-lg font-medium min-h-[50px]"
-                            {...field}
-                            {...form.register("fullname")}
-                          />
-                        </FormControl>
-                        {/* <FormDescription>
-                  </FormDescription> */}
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                </div>
-                <div className={styles.inputBox}>
-                  <FormField
-                    control={form.control}
-                    name="email"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel className="text-sm font-semibold">
-                          Email Address
-                        </FormLabel>
-                        <FormControl>
-                          <Input
-                            type="email"
-                            placeholder="Enter email address"
-                            className="text-lg font-medium min-h-[50px]"
-                            {...field}
-                            {...form.register("email")}
-                          />
-                        </FormControl>
-                        {/* <FormDescription>
-                  </FormDescription> */}
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                </div>
-                <div className={styles.inputBox}>
-                  <FormField
-                    control={form.control}
-                    name="company"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel className="text-sm font-semibold">
-                          Company Name
-                        </FormLabel>
-                        <FormControl>
-                          <Input
-                            type="text"
-                            placeholder="Enter company name"
-                            className="text-lg font-medium min-h-[50px]"
-                            {...field}
-                            {...form.register("company")}
-                          />
-                        </FormControl>
-                        {/* <FormDescription>
-                  </FormDescription> */}
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                </div>
-                <div className={styles.inputBox}>
-                  <FormField
-                    control={form.control}
-                    name="subject"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel className="text-sm font-semibold">
-                          Subject
-                        </FormLabel>
-                        <FormControl>
-                          <Input
-                            type="text"
-                            placeholder="Enter your subject"
-                            className="text-lg font-medium min-h-[50px]"
-                            {...field}
-                            {...form.register("subject")}
-                          />
-                        </FormControl>
-                        {/* <FormDescription>
-                  </FormDescription> */}
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                </div>
-                <div className={styles.inputBox}>
-                  <FormField
-                    control={form.control}
-                    name="message"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel className="text-sm font-semibold">
-                          Message
-                        </FormLabel>
-                        <FormControl>
-                          <Textarea
-                            placeholder="Type your message"
-                            className="resize-none text-lg font-medium text-foreground placeholder:text-foreground min-h-[50px] bg-slate-100"
-                            {...field}
-                            {...form.register("message")}
-                          />
-                        </FormControl>
-                        {/* <FormDescription>
-                  </FormDescription> */}
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                </div>
-                <div className={styles.inputBox}>
-                  <Button type="submit" name="submit" disabled={isLoading}>
-                    {isLoading && (
-                      <Icons.spinner className="mr-2 h-4 w-4 animate-spin" />
-                    )}
-                    Send Message
-                  </Button>
-                </div>
-              </form>
-            </Form>
+            <ContactForm />
           </div>
         </div>
       </div>
@@ -243,13 +69,3 @@ export default function Contacts({ url }) {
     </>
   );
 }
-
-Contacts.getInitialProps = async () => {
-    const url = process.env.BACKEND_API_URL;
-  
-    return {
-      props: {
-        url: url,
-      },
-    };
-  };
