@@ -149,7 +149,6 @@ export default makeSource({
     rehypePlugins: [
       rehypeSlug,
       [
-        rehypePrettyCode,
         {
           theme: "github-dark",
           onVisitLine(node) {
