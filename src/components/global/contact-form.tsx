@@ -16,7 +16,7 @@ import datasource from "@/datalayer";
 import { ContactFormSchema, ContactFormResolver } from "@/lib/form-schema";
 import { Button } from "@/components/ui/button";
 import { Icons } from "@/components/body/icons";
-import styles from "../styles/contacts.module.css";
+import styles from "../../app/styles/contacts.module.css";
 
 const contactFS = ContactFormSchema();
 export default function ContactForm(props) {
