@@ -5,7 +5,7 @@ import Footer from "@/components/body/footer";
 import { HeadElement } from "@/components/body/head";
 import ContactForm from "@/components/global/contact-form";
 
-export default function Contacts({ url }) {
+export default function Contacts() {
   return (
     <>
       <HeadElement url="" image="" title="Contacts" description="" />
